@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>Servey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        body{           
+            background:url(https://usa.kaspersky.com/content/en-us/images/repository/isc/2017-images/What-is-Cyber-Security.jpg) no-repeat;
+            background-size:1300px 1000px;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .formServey{
+            background-color:rgba(255,255,255,0.4);
+            margin:50px auto;
+            width: 40%;
+            padding-left:50px;
+            padding-right:50px;
+        }
+
+        label{
+            display: block;
+            color: white;
+            padding-top:10px;
+            padding-bottom:5px;
+        }
+
+        input[type="text"]{
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left: 20px;
+            border:0;
+            border-radius:3px;
+            margin-bottom: 0px;
+            width: 500px;
+            height: 30px;
+        }
+
+        #currentrole, #favorite{
+            color: #999;
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left: 20px;
+            border:0;
+            border-radius:3px;
+            margin-bottom: 0px;
+            width: 500px;
+            height: 30px;
+        }
+
+        .radiolabel{
+            display: inline;
+            color: white;
+        }
+
+        .submit{
+            background: linear-gradient(#7CFC00,#32CD32);
+            display:block;
+            width: 500px;
+            height: 40px; 
+            border:0;
+            margin-top:10px;
+            margin-bottom:10px;
+            border-radius:5px;
+            font-size: 1.1rem;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div class="formServey">
+      <form action="#">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required/>
+        
+        <label for="email">Email</label>
+        <input id="email" type="text" placeholder="Enter your Email" required/>
+        
+        <label for="age">Age (optional)</label>
+        <input id="age" type="text" placeholder="Enter your age" />
+        
+        <label for="currentrole">Which option best describes your current role?</label>
+        <select name="currentrole" id="currentrole">
+          <option value="norole" selected>Select current role</option>
+          <option value="student">Student</option>
+          <option value="fulltimejob">Full Time Job</option>
+          <option value="fulltimelearner">Full Time Learner</option>
+          <option value="prefernotsay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        
+        <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+        <input type="radio" id="definitely" name="recommend" value="definitely" checked><label class="radiolabel" for="definitely">Definitely</label><br>
+        <input type="radio" id="maybe" name="recommend" value="maybe"><label class="radiolabel" for="maybe">Maybe</label><br>
+        <input type="radio" id="notsure" name="recommend" value="notsure"><label class="radiolabel" for="notsure">Not sure</label>
+        <br>
+        
+        <label for="favorite">What is your favorite feature of freeCodeCamp?</label>
+        <select name="favorite" id="favorite">
+          <option value="option" selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select>
+        
+        <label for="improved">What would you like to see improved?(Check all that apply)</label>
+        <input type="checkbox" id="frontend" name="improved" value="frontend" checked /><label class="radiolabel" for="frontend">Front-end Projects</label><br>
+        <input type="checkbox" id="backend" name="improved" value="backend" /><label class="radiolabel" for="backend">Back-end Projects</label><br>
+        <input type="checkbox" id="dataVisualization" name="improved" value="dataVisualization" /><label class="radiolabel" for="dataVisualization">Data Visualization</label><br>
+        <input type="checkbox" id="challenges" name="improved" value="challenges" /><label class="radiolabel" for="challenges">Challenges</label><br>
+        <input type="checkbox" id="openSourceCommunity" name="improved" value="openSourceCommunity" /><label class="radiolabel" for="openSourceCommunity">Open Source Community</label><br>
+        <input type="checkbox" id="gitterhelprooms" name="improved" value="gitterhelprooms" /><label class="radiolabel" for="gitterhelprooms">Gitter help rooms</label><br>
+        <input type="checkbox" id="videos" name="improved" value="videos" /><label class="radiolabel" for="videos">Videos</label><br>
+        <input type="checkbox" id="cityMeeetups" name="improved" value="cityMeeetups" /><label class="radiolabel" for="cityMeeetups">City Meeetups</label><br>
+        <input type="checkbox" id="wiki" name="improved" value="wiki" /><label class="radiolabel" for="wiki">Wiki</label><br>
+        <input type="checkbox" id="forum" name="improved" value="forum" /><label class="radiolabel" for="forum">Forum</label><br>
+        <input type="checkbox" id="additionalCourses" name="improved" value="additionalCourses" /><label class="radiolabel" for="additionalCourses">Additional Courses</label><br>
+        
+        <label for="suggestion">Any Comments or suggestions?</label>
+        <textarea id="suggestion" cols="66" rows="5" placeholder="Enter your comment here..." style="border-radius:10px;padding-top:10px;padding-bottom:5px;padding-left: 20px;"></textarea>
+        
+        <input type="submit" class="submit" value"Submit" />
+        <br/>
+      </form>
+    </div>
+  </body>
+<html>
